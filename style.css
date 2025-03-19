@@ -162,7 +162,7 @@ select {
   width: 250px;
 }
 .section2 h3 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
 }
 .section2 h3 span {
@@ -309,6 +309,12 @@ select {
   font-family: var(--poppins-font-family);
   padding: 50px 0px;
 }
+.section6 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .section6 h2 {
   font-size: 36px;
   font-weight: 700;
@@ -329,9 +335,10 @@ select {
 .treatement-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 30px;
 }
 .box {
   width: 330px;
@@ -342,6 +349,10 @@ select {
   background-color: var(--card-white);
   box-shadow: var(--shadow-color);
   padding: 30px;
+}
+.box1 {
+  width: 330px;
+  height: 2px;
 }
 .box .img {
   width: 280px;
