@@ -22,23 +22,23 @@
         <div class="logo">
           <img src="./images/luxe-logo.png" alt="" />
           <nav>
-            <a href="#">Home</a>
-            <a href="#">about</a>
-            <a href="#">services</a>
-            <a href="#">contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">about</a>
+            <a href="#service">services</a>
+            <a href="#contact">contact</a>
           </nav>
         </div>
         <div class="nav-contact">
           <a href="tel:+918885435463" class="phone"
             ><i class="fa-solid fa-phone-volume"></i>88854 35463
           </a>
-          <a href="#" class="book-btn">Book an Appointment</a>
+          <a href="#home" class="book-btn">Book an Appointment</a>
         </div>
       </div>
     </header>
     <!-- ==========header========== -->
     <!-- ========== hero========== -->
-    <section class="section section1">
+    <section class="section section1" id="home">
       <div class="container">
         <div class="form">
           <h2>Book Your Consultation Today!</h2>
@@ -52,8 +52,24 @@
               id="phone"
               placeholder="Location"
             />
-            <select name="Treatment Name" id="treatement">
-              <option value="hair implementation">hair implementation</option>
+            <select name="Treatment Name" id="treatment">
+              <option value="" disabled selected>Select Treatment</option>
+              <optgroup label="Hair Treatments">
+                <option value="prp_gfc">PRP/GFC</option>
+                <option value="hair_loss_fall">Hair Loss/Hair Fall</option>
+                <option value="androgenic_alopecia">Androgenic Alopecia</option>
+                <option value="alopecia_areata">Alopecia Areata</option>
+                <option value="dandruff">Dandruff</option>
+                <option value="premature_greying">Premature Greying</option>
+                <option value="hair_growth_boosters">
+                  Hair Growth Boosters
+                </option>
+                <option value="scalp_micro_pigmentation">
+                  Scalp Micro Pigmentation
+                </option>
+                <option value="scalp_microneedling">Scalp Microneedling</option>
+                <option value="hair_transplant">Hair Transplant</option>
+              </optgroup>
             </select>
             <button type="submit" class="sub-btn">Submit</button>
           </form>
@@ -70,7 +86,7 @@
         <div class="section2-img">
           <div class="text">
             <h3>
-              Watching Your Hair Thin? Take Control with
+              Watching Your Hair Thin? Take Control with <br />
               <span>Luxe Aesthetics in Hyderabad!</span>
             </h3>
             <p>Luxe Aesthetic | Advanced Hair Fall & Scalp Treatments</p>
@@ -99,7 +115,7 @@
     <div class="cta">
       <div class="container">
         <h2>Discover Benefits of Luxe Aesthetics</h2>
-        <a href="#">Book an Appointment</a>
+        <a href="#home">Book an Appointment</a>
       </div>
     </div>
     <!-- ========== CTA========== -->
@@ -133,7 +149,7 @@
     </section>
     <!-- ========== Section 3========== -->
     <!-- ========== Section 4========== -->
-    <section class="section section4">
+    <section class="section section4" id="about">
       <h2><span>Why </span>Choose Us</h2>
       <p>
         We approach each patient as an individual, providing guidance and
@@ -151,7 +167,7 @@
           </div>
         </div>
         <div class="fet-con">
-          <img src="./images/certificate.png" alt="" />
+          <img src="./images/certificate2.png" alt="" />
           <div class="text">
             <h3>Safe & Effective Treatments</h3>
             <p>
@@ -161,7 +177,7 @@
           </div>
         </div>
         <div class="fet-con">
-          <img src="./images/certificate.png" alt="" />
+          <img src="./images/certificate3.png" alt="" />
           <div class="text">
             <h3>Results That Last</h3>
             <p>
@@ -171,7 +187,7 @@
           </div>
         </div>
         <div class="fet-con">
-          <img src="./images/certificate.png" alt="" />
+          <img src="./images/certificate4.png" alt="" />
           <div class="text">
             <h3>Premium Care, Tailored for You</h3>
             <p>
@@ -208,7 +224,7 @@
     </div>
     <!-- ========== Section 5========== -->
     <!-- ========== Section 6========== -->
-    <section class="section section6">
+    <section class="section section6" id="service">
       <div class="container">
         <h2>Luxe Aesthetic: <span> Bringing Back the Hair You Love</span></h2>
         <p>
@@ -218,75 +234,90 @@
         </p>
         <div class="treatement-container">
           <div class="box">
-            <div class="img"><img src="./images/hero-main.png" alt="" /></div>
+            <div class="img"><img src="./images/service10.png" alt="" /></div>
             <div class="text">
               <h3>Hair Transplant</h3>
               <p>Restore your natural hairline with precision techniques.</p>
+              <a href="#home">Book An Appointment</a>
             </div>
           </div>
           <div class="box">
-            <div class="img"><img src="./images/hero-main.png" alt="" /></div>
+            <div class="img"><img src="./images/servise1.png" alt="" /></div>
             <div class="text">
-              <h3>Hair Transplant</h3>
-              <p>Restore your natural hairline with precision techniques.</p>
+              <h3>PRP/GFC Therapy</h3>
+              <p>Boost hair regrowth with advanced regenerative solutions.</p>
+              <a href="#home">Book An Appointment</a>
             </div>
           </div>
           <div class="box">
-            <div class="img"><img src="./images/hero-main.png" alt="" /></div>
+            <div class="img"><img src="./images/service2.png" alt="" /></div>
             <div class="text">
-              <h3>Hair Transplant</h3>
-              <p>Restore your natural hairline with precision techniques.</p>
+              <h3>Hair Loss & Hair Fall Control</h3>
+              <p>Strengthen hair and prevent excessive shedding.</p>
+              <a href="#home">Book An Appointment</a>
             </div>
           </div>
           <div class="box">
-            <div class="img"><img src="./images/hero-main.png" alt="" /></div>
+            <div class="img"><img src="./images/section3.png" alt="" /></div>
             <div class="text">
-              <h3>Hair Transplant</h3>
-              <p>Restore your natural hairline with precision techniques.</p>
+              <h3>Androgenic Alopecia</h3>
+              <p>
+                Specialized treatments for male and female pattern baldness.
+              </p>
+              <a href="#home">Book An Appointment</a>
             </div>
           </div>
           <div class="box">
-            <div class="img"><img src="./images/hero-main.png" alt="" /></div>
+            <div class="img"><img src="./images/service4.png" alt="" /></div>
             <div class="text">
-              <h3>Hair Transplant</h3>
-              <p>Restore your natural hairline with precision techniques.</p>
+              <h3>Alopecia Areata</h3>
+              <p>Target patchy hair loss with expert solutions.</p>
+              <a href="#home">Book An Appointment</a>
             </div>
           </div>
           <div class="box">
-            <div class="img"><img src="./images/hero-main.png" alt="" /></div>
+            <div class="img"><img src="./images/section5.png" alt="" /></div>
             <div class="text">
-              <h3>Hair Transplant</h3>
-              <p>Restore your natural hairline with precision techniques.</p>
+              <h3>Premature Greying Solutions</h3>
+              <p>Delay early greying with proven therapies.</p>
+              <a href="#home">Book An Appointment</a>
             </div>
           </div>
           <div class="box">
-            <div class="img"><img src="./images/hero-main.png" alt="" /></div>
+            <div class="img"><img src="./images/service6.png" alt="" /></div>
             <div class="text">
-              <h3>Hair Transplant</h3>
-              <p>Restore your natural hairline with precision techniques.</p>
+              <h3>Dandruff Treatment</h3>
+              <p>Eliminate dandruff and improve scalp health.</p>
+              <a href="#home">Book An Appointment</a>
             </div>
           </div>
           <div class="box">
-            <div class="img"><img src="./images/hero-main.png" alt="" /></div>
+            <div class="img"><img src="./images/service7.png" alt="" /></div>
             <div class="text">
-              <h3>Hair Transplant</h3>
-              <p>Restore your natural hairline with precision techniques.</p>
+              <h3>Hair Growth Boosters</h3>
+              <p>Enhance hair density with customized regrowth treatments.</p>
+              <a href="#home">Book An Appointment</a>
             </div>
           </div>
           <div class="box">
-            <div class="img"><img src="./images/hero-main.png" alt="" /></div>
+            <div class="img"><img src="./images/secvice8.png" alt="" /></div>
             <div class="text">
-              <h3>Hair Transplant</h3>
-              <p>Restore your natural hairline with precision techniques.</p>
+              <h3>Scalp Micropigmentation</h3>
+              <p>
+                Create the appearance of thicker hair with expert pigmentation.
+              </p>
+              <a href="#home">Book An Appointment</a>
             </div>
           </div>
           <div class="box">
-            <div class="img"><img src="./images/hero-main.png" alt="" /></div>
+            <div class="img"><img src="./images/service9.png" alt="" /></div>
             <div class="text">
-              <h3>Hair Transplant</h3>
-              <p>Restore your natural hairline with precision techniques.</p>
+              <h3>Scalp Microneedling</h3>
+              <p>Stimulate hair follicles for stronger, healthier hair.</p>
+              <a href="#home">Book An Appointment</a>
             </div>
           </div>
+
           <div class="box1"></div>
           <div class="box1"></div>
         </div>
@@ -324,13 +355,13 @@
               solutions designed to bring back your hair—and your confidence.
             </p>
           </div>
-          <a href="">Book an Appointment Today! </a>
+          <a href="#home">Book an Appointment Today! </a>
         </div>
       </div>
     </div>
     <!-- cta -->
     <!-- ========== Section 8========== -->
-    <section class="section section8">
+    <section class="section section8" id="contact">
       <div class="container">
         <div class="form2-container">
           <div class="form2">
@@ -350,8 +381,28 @@
                 id="phone"
                 placeholder="Location"
               />
-              <select name="Treatment Name" id="treatement">
-                <option value="hair implementation">hair implementation</option>
+              <select name="Treatment Name" id="treatment">
+                <option value="" disabled selected>Select Treatment</option>
+                <optgroup label="Hair Treatments">
+                  <option value="prp_gfc">PRP/GFC</option>
+                  <option value="hair_loss_fall">Hair Loss/Hair Fall</option>
+                  <option value="androgenic_alopecia">
+                    Androgenic Alopecia
+                  </option>
+                  <option value="alopecia_areata">Alopecia Areata</option>
+                  <option value="dandruff">Dandruff</option>
+                  <option value="premature_greying">Premature Greying</option>
+                  <option value="hair_growth_boosters">
+                    Hair Growth Boosters
+                  </option>
+                  <option value="scalp_micro_pigmentation">
+                    Scalp Micro Pigmentation
+                  </option>
+                  <option value="scalp_microneedling">
+                    Scalp Microneedling
+                  </option>
+                  <option value="hair_transplant">Hair Transplant</option>
+                </optgroup>
               </select>
               <button type="submit" class="sub-btn">Submit</button>
             </form>
@@ -399,6 +450,7 @@
         <div class="address">
           <h3>Make Appointment</h3>
           <h4>
+            <i class="fa-regular fa-clock"></i>
             9:30 AM - 8 PM,<br />
             Tuesday - Sunday
           </h4>

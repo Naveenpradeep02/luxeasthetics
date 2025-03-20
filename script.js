@@ -64,14 +64,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  duplicateSlides(); // Call function to duplicate slides
+  duplicateSlides();
 
-  // Reset scroll position when reaching the end
-  function checkScroll() {
+  function autoScroll() {
+    slider.scrollLeft += 1;
     if (slider.scrollLeft >= slider.scrollWidth / 2) {
-      slider.scrollLeft = 0; // Reset to start
+      slider.scrollLeft = 0;
     }
   }
 
-  slider.addEventListener("scroll", checkScroll); // Monitor scroll
+  setInterval(autoScroll, 100);
 });

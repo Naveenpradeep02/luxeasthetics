@@ -24,6 +24,9 @@
   /*  shadow*/
   --shadow-color: 0px 0px 10px rgba(0, 0, 0, 0.425);
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
 }
@@ -151,7 +154,7 @@ select {
 .section2 .container {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  padding: 150px 0px;
+  padding: 50px 0px;
   font-family: var(--poppins-font-family);
   align-items: center;
   justify-content: center;
@@ -326,6 +329,7 @@ select {
   background-color: var(--dark-blue-color);
   color: var(--card-white);
   font-family: var(--poppins-font-family);
+  text-transform: capitalize;
 }
 /* .counter h1 {
   width: 100px;
@@ -345,8 +349,7 @@ select {
   width: 250px;
   text-align: center;
 }
-.counter h3 {
-}
+
 /* counter */
 /* section 6 */
 .section6 {
@@ -363,7 +366,6 @@ select {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  width: 55%;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -386,6 +388,7 @@ select {
 }
 .box {
   width: 330px;
+  height: 550px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,7 +409,12 @@ select {
 .box .img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+}
+.box .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .box .text h3 {
   text-align: center;
@@ -417,7 +425,13 @@ select {
 .box .text p {
   width: 100%;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+}
+.box .text a {
+  padding: 10px 25px;
+  text-align: center;
+  background-color: var(--gold-color);
+  color: var(--white-color);
 }
 /* section 6 */
 /* cta2 */
@@ -476,12 +490,6 @@ select {
 .slider-container::-webkit-scrollbar {
   display: none;
 }
-.slider-track {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  width: max-content;
-}
 .slide {
   width: 300px;
   height: 300px;
@@ -492,6 +500,23 @@ select {
 }
 .slide:hover {
   transform: scale(1.05);
+}
+.slider-track {
+  display: flex;
+  gap: 10px; /* Adjust spacing */
+  padding: 20px;
+  width: max-content;
+  animation: scrollAnimation 20s linear infinite; /* Auto-scroll */
+}
+
+/* Auto-Scrolling Animation */
+@keyframes scrollAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); /* Moves halfway before resetting */
+  }
 }
 
 /* section 7 */
