@@ -1,3 +1,26 @@
+// ================== toggle menu
+const open = document.querySelector(".open");
+const close = document.querySelector(".close");
+const mobileMenu = document.querySelector(".mobile-nav");
+
+// Function to open the mobile menu
+const handleOpen = () => {
+  mobileMenu.classList.add("show-menu");
+  open.classList.add("remove-bar");
+  close.classList.add("show-x");
+};
+
+// Function to close the mobile menu
+const handleClose = () => {
+  mobileMenu.classList.remove("show-menu");
+  open.classList.remove("remove-bar");
+  close.classList.remove("show-x");
+};
+
+// ✅ Add event listeners
+open.addEventListener("click", handleOpen);
+close.addEventListener("click", handleClose);
+
 // =================================== scroll number count============================
 
 const counters = document.querySelectorAll(".counter span");
