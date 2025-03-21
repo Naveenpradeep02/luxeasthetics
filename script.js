@@ -98,3 +98,58 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setInterval(autoScroll, 100);
 });
+
+const googleSheetAPIUrl =
+  "https://script.google.com/macros/s/AKfycbw0Ja3pxWDIEBeMvbamsD9MiCdA52JagNm8l_8tovQkatZuVNw6MtQyx_T4AxiNEyUjiQ/exec";
+
+document.getElementById("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let submitButton = document.querySelector(".sub-btn");
+  submitButton.disabled = true;
+  submitButton.textContent = "Submitting..."; // Change button text
+
+  let formData = new FormData(this);
+
+  fetch(this.action, {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      alert("Form submitted successfully!");
+      window.location.reload(); // Reload the page after submission
+    })
+    .catch((error) => {
+      console.error("Error!", error);
+      alert("There was an error submitting the form. Please try again.");
+      submitButton.disabled = false;
+      submitButton.textContent = "Submit"; // Reset button text if an error occurs
+    });
+});
+
+document.getElementById("form2").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let submitButton = document.querySelector(".sub-btn2");
+  submitButton.disabled = true;
+  submitButton.textContent = "Submitting..."; // Change button text
+
+  let formData = new FormData(this);
+
+  fetch(this.action, {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      alert("Form submitted successfully!");
+      window.location.reload(); // Reload the page after submission
+    })
+    .catch((error) => {
+      console.error("Error!", error);
+      alert("There was an error submitting the form. Please try again.");
+      submitButton.disabled = false;
+      submitButton.textContent = "Submit"; // Reset button text if an error occurs
+    });
+});
